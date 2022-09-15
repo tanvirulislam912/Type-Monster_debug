@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap Links  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+ <!-- header Section Start  -->
+ <header>
+    <section class="container rounded my-5">
+            <nav class="navbar navbar-expand-lg bg-white rounded mb-5">
+                <div class="container-fluid">
+                    <!-- <a style="cursor: pointer;" class="navbar-brand text-dark;" href="index.html" ><span class="border rounded p-3 border-success text-info">Current</span > News</a> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText"><ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                 
+                    <li class="nav-item me-5">
+                      <img style="height:50px;" class="img-fluid rounded-circle" src="image/396-3969430_news-icon-icon-news-logo-hd-png-download.png" alt="">
+                    </li>
+                  </ul>
+                    <!-- <span class="navbar-text">
+                      Navbar text with an inline element
+                    </span> -->
+                  </div>
+                </div>
+              </nav>
+          <hr>
+    </section>     
+</header>
+    <main class="container">
+        <section class="container">
+            <div>
+                <h1 class="text-center fs-1 fw-1 text-info">Block Section</h1>
+            </div>
+            <div class="accordion my-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Difference between Local storage && Session storage 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div>
+                        <h1>Local storage</h1>
+                        <p> The storage capacity of local storage is 5MB/10MB.As it is not session-based, it must be deleted via javascript or manually.The client  can only read local storage.There is no transfer of data to the server.There are fewer old browsers that support it.</p>
+                      </div>
+                      <div>
+                        <h1>Session storage</h1>
+                        <p> The storage capacity of session storage is 5MB.It is session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed.The client can only read local storage.There is no transfer of data to the server.There are fewer old browsers that support it.</p>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Difference between Global scope && Block scope 
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h1>Global Scope</h1>
+                      <p> The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable. </p>
+                       
+
+                        <h1>Block Scope</h1>
+                        
+                        <p> Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Javascript even loop
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                      <p> JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks. The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task. The event loop allows us to use callbacks and promises.</p>
+                        
+                      
+    
+                       
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Undefined in javascript 
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                      <p> undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.
+
+                        In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)
+                        
+                        A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.</p>
+                        
+                      
+    
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </section>
+        
+        
+        <section>
+            <footer class="text-center bg-dark text-white px-5 py-5">Copyright &copy; All Right Reserved By Tanvirul Islam</footer>
+        </section>
+    </main> 
+    
+    
+     <!-- Main JS  -->
+     <script src="js/main.js"></script>
+     <!-- Bootstrap JS  -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speed Monster</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
-    <div id="show-time">0 seconds</div>
 
-    <div class="box-container">
-      <div id="question"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Typer - 2022</title>
 
-      <div id="display" class="inactive"></div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
 
-      <div class="buttons">
-        <button id="starts">START</button>
+  <!-- ---------------------------------font icon cdn --------------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ----------bootstrap cdn link------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+ <!-- header navbar start-->
+  <header>
+    <nav id="topnav" class="">
+      <a href=""><img class="image" src="./logo.png" alt=""></a>
+      <div class="nav-links" id="nav-links">
+        <i class="fa-solid fa-xmark text-white" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="block.html">BLOCK</a></li>
+        </ul>
       </div>
+      <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    </nav>
 
-      <div class="divider-container">
-        <div class="line"></div>
-        <h1 class="title2">History</h1>
-        <div class="line"></div>
-      </div>
-      <div id="histories"></div>
+  </header>
+<!-- header navbar end-->
+
+  <div id="show-time">0 seconds</div>
+
+  <div class="box-container">
+    <div id="question"></div>
+
+    <div id="display" class="inactive" type="text"></div>
+
+
+    <div class="buttons">
+      <button id="starts">START</button>
     </div>
 
-    <div id="countdown"></div>
-    <div id="modal-background" class="hidden"></div>
-    <div id="result" class="hidden"></div>
+    <div class="divider-container">
+      <div class="line"></div>
+      <h1 class="title2">History</h1>
+      <div class="line"></div>
+    </div>
+    <div id="histories"></div>
+  </div>
 
-    <script src="./history.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <div id="countdown"></div>
+  <div id="modal-background" class="hidden"></div>
+  <div id="result" class="hidden">
+
+
+
+  </div>
+
+  <script src="./history.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
